@@ -1,0 +1,119 @@
+loadstring("local Library = loadstring(game:HttpGet("https://pastebin.com/raw/vff1bQ9F"))()
+local Window = Library.CreateLib("Bobo Hub", "Midnight")
+
+-- Tabs
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("cool")
+
+-- Buttons
+
+Section:NewButton("Animation Changer", "It changes the animation walk", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RubyBoo4life/Scripts/main/animations.vis'))()
+end)
+
+Section:NewButton("Fling YEET GUI", "Credit to the Owner", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/saMtiek2",true))()
+end)
+
+Section:NewButton("Speed Tool", "This tool makes u faster if you click", function()
+mouse = game.Players.LocalPlayer:GetMouse()
+tool = Instance.new("Tool")
+tool.RequiresHandle = false
+tool.Name = "Click To Speed Up"
+tool.Activated:connect(function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+tool.Parent = game.Players.LocalPlayer.Backpack
+end)
+
+Section:NewButton("Fly V3", "they added destroy gui", function()
+loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\79\122\56\48\48\56\47\102\103\51\47\109\97\105\110\47\103\117\105\34\41\41\40\41\10")()
+end)
+
+Section:NewButton("Translator", "sussy", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsRhylee/name/main/language"))()
+end)
+ 
+ Section:NewButton("Permanent Animation", "lol", function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsRhylee/bruh/main/perm"))()
+ end)
+ 
+-- Tabs
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("He's Noob")
+
+--Buttons
+
+Section:NewButton("Infinite Jump", "OMG I CAN FLY", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/FiUawyVz"))();
+end)
+
+Section:NewButton("Shiftlock", "Free Shiftlock :D", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/WQ9NPeDS'))();
+end)
+
+Section:NewButton("Keyboard", "This is the better one", function()
+loadstring(game:HttpGet("https://pastebin.com/raw/kC3dAMvt"))()
+end)
+
+Section:NewButton("AutoClicker", "it work some games", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ItsRhylee/ahhah/main/ahhahahahhnrisjeiaosmeisksjsjejsmms"))()
+end)
+  
+--More Hub (Credit)
+
+local Tab = Window:NewTab("More Hubs")
+local Section = Tab:NewSection("Credits to the owners")
+
+--Buttons
+Section:NewButton("JN HH Gaming Bedwars Hub", "Credit to him", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JNHHGaming123/JN-Bedwars-V6/6c8fd023d50e25f893ca34322458be32a0bac4c5/JN%20Bedwars%20V6"))()
+end)
+ 
+Section:NewButton("VHub", "This Hub Is Cool", function()
+ loadstring(game:HttpGet(('https://raw.githubusercontent.com/itsyaboivincentt5315/script/main/VHub.txt'),true))()
+ end)
+ 
+ Section:NewButton("Carl Hub", "Credit to him", function()
+ loadstring(game:HttpGet('https://raw.githubusercontent.com/carlcoded/carlispro/main/carlhub'))()
+ end)
+ 
+ Section:NewButton("Unknown Hub (CLICK THE 3 DOTS)", "Key:FinallyV2IsOut", function()
+ loadstring(game:HttpGet("https://paste.ee/r/wRN22",true))()
+ end)
+ 
+ Section:NewButton("Someone Hub", "sheesh credit to him", function()
+ _G.Color = Color3.fromRGB(0,255,0)
+loadstring(game:HttpGet"https://raw.githubusercontent.com/kickTh/SCRIPT-SOME-X-HUB/main/README.md")()
+end)
+ 
+--Bedwars
+local Tab = Window:NewTab("Bedwars")
+local Section = Tab:NewSection("Enjoy!")
+
+Section:NewButton("AntiKnockback", "EZ", function()
+loadstring(game:HttpGet('https://pastebin.com/raw/GdKinezj'))();
+end)
+
+--Player
+
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("Enjoy")
+
+Section:NewToggle("Fov", "Changes Fov", function(state)
+    if state then
+        game.Workspace.CurrentCamera.FieldOfView = 120
+     else
+        game.Workspace.CurrentCamera.FieldOfView = 80
+    end
+end)
+
+Section:NewToogle("Speed", "im faster than u lol", function(state)
+   if state then
+       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70
+    else
+       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 20
+      end
+end)
